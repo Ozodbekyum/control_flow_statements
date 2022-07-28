@@ -9,5 +9,18 @@
         a: integer
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False. */
+bool func(int a) {
+  int n, m, o;
+  n = a ~/ 10; //4
+  m = a % 10; //3
+  o = m * 10 + n;
 
-void main() {}
+  if (o <= a) {
+    return true;
+  }
+  return false;
+}
+
+void main() {
+  print(func(34));
+}
