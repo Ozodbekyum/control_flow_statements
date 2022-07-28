@@ -5,5 +5,21 @@
     Args:
         a: integer
     Returns:
-        a: integer*/
-void main() {}
+        a: integer
+*/
+int func(int a) {
+  if (a > 0) {
+    a += 1;
+  }
+  if (a < 0) {
+    a -= 2;
+  }
+  if (a == 0) {
+    a = 10;
+  }
+  return a;
+}
+
+void main() {
+  print(func(1));
+}
