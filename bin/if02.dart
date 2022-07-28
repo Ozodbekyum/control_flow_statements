@@ -5,6 +5,15 @@
     Args:
         a: integer
     Returns:
-        a: a increased by 1 if positive, else decreased by 2.*/
+        a: a increased by 1 if positive, else decreased by 2.
+*/
+int func(int a) {
+  if (a > 0) {
+    return a + 1;
+  }
+  return a - 2;
+}
 
-void main() {}
+void main() {
+  print(func(-4));
+}
