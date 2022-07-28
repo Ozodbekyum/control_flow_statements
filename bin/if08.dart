@@ -21,7 +21,7 @@ String func(int a) {
       u = "two-digit odd number";
     }
   }
-  if (a < 0) {
+  if (a > 0) {
     if (a % 2 == 0) {
       u = "three-digit even number";
     }
@@ -33,5 +33,5 @@ String func(int a) {
 }
 
 void main() {
-  print(func(-457));
+  print(func(457));
 }
