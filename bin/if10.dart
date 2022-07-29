@@ -12,5 +12,37 @@
         temp: integer
     Returns:
         string: the message to return*/
+String func(int temp) {
+  String u = '';
+  if (temp < 0) {
+    u = "Freezing";
+  }
+  if (temp > 1) {
+    if (temp < 10) {
+      u = "Very Cold";
+    }
+  }
+  if (temp > 11) {
+    if (temp < 20) {
+      u = "Cold";
+    }
+  }
+  if (temp > 21) {
+    if (temp < 30) {
+      u = "Normal";
+    }
+  }
+  if (temp > 31) {
+    if (temp < 40) {
+      u = "Hot";
+    }
+  }
+  if (temp > 40) {
+    u = "Very Hot";
+  }
+  return u;
+}
 
-void main() {}
+void main() {
+  print(func(2));
+}
